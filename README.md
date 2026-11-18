@@ -1,4 +1,4 @@
-# VEYRA — Personal AI Robot
+# MIRAI — Personal AI Robot
 
 A React robot face with voice input, spoken replies, expressions, and an Express/OpenAI backend.
 
