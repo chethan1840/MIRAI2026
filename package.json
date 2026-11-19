@@ -8,7 +8,9 @@
     "server": "node server/server.js",
     "client": "vite --host 0.0.0.0",
     "build": "vite build",
-    "start": "node server/server.js"
+    "build:gh": "cross-env GITHUB_PAGES=true vite build",
+    "start": "node server/server.js",
+    "deploy": "npm run build:gh && gh-pages -d dist"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -21,6 +23,8 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
     "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "gh-pages": "^6.3.0",
     "vite": "^5.4.11"
   }
 }
